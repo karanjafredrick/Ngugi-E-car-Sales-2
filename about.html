@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngugi E-car Sales</title>
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" 
+    integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="Ngugi E-car Sales">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list" id="nav-list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="listings.html" class="nav__link">Browse Cars</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="side2__keys">
+                <i class="ri-sun-line mode__toggle"></i>
+                <i class="ri-menu-line nav__toggle" id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home__section">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">About Ngugi E-Car Sales</h1>
+                    <p class="home__description">Leading the vehicle revolution with premium cars and exceptional service</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg__story">
+            <div class="bg__story-container container grid">
+                <div class="site__bg">
+                    <div class="site__data">
+                        <h2 class="sub__title">Our Story</h2>
+                        <p class="description">
+                            Founded in 2020, Ngugi E-Car Sales emerged from a vision to make electric vehicles accessible to everyone. 
+                            We believe that the future of transportation is electric, and we're committed to helping our customers make the transition with confidence.
+                            Our team of experts has decades of combined experience in the automotive industry, specializing in electric and hybrid vehicles. 
+                            We understand the unique needs of EV buyers and provide comprehensive support throughout the entire journey.
+                            Today, we're proud to be one of the most trusted names in electric vehicle sales, with thousands of satisfied customers driving cleaner, more efficient vehicles.
+                        </p>
+                    </div>
+
+                    <div class="site__details">
+                        <ul>
+                            <li class="sales">500+ <span>Cars Sold</span></li>
+                            <li class="satisfaction">98% <span>Customer Satisfaction</span></li>
+                            <li class="brands">15+ <span>EV Brands</span></li>
+                            <li class="experience">3+ <span>Years Experience</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <section class="values__section">
+            <div class="bg__story-container container grid">
+                <div class="site__values">
+                    <h2 class="sub__title">Our Values</h2>
+                    <p class="description">The principles that guide everything we do</p>
+
+                    <div class="value__cards">
+                        <div class="value__card">
+                            <i class="ri-shield-line shield"></i>
+                            <h3>Trust</h3>
+                            <p>Building lasting relationships through transparency and honesty in every interaction</p>
+                        </div>
+                        <div class="value__card">
+                            <i class="ri-group-line group"></i>
+                            <h3>Customer First</h3>
+                            <p>Your satisfaction is our priority. We go above and beyond to exceed expectations</p>
+                        </div>
+                        <div class="value__card">
+                            <i class="ri-award-line award"></i>
+                            <h3>Excellence</h3>
+                            <p>Committed to delivering the highest quality vehicles and service experiences</p>
+                        </div>
+                        <div class="value__card">
+                            <i class="ri-focus-2-line focus"></i>
+                            <h3>Innovation</h3>
+                            <p>Embracing the future with cutting-edge electric vehicle technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission__section">
+            <div class="bg__story-container container grid">
+                <div class="mission">
+                    <h2 class="sub__title">Our Mission</h2>
+                    <p class="description">
+                        To accelerate the world's transition to sustainable transportation by 
+                        making electric vehicles accessible, affordable, and desirable for everyone. 
+                        We're not just selling cars - we're building a cleaner, more sustainable future for generations to come.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="assets/img/logo.png" alt="Ngugi E-car Sales Logo">
+                    </div>
+
+                    <p class="footer__description">
+                        Ngugi E-Car Sales is your premier destination for Motor vehicles. We provide a seamless car buying experience with transparent pricing and expert guidance.
+                    </p>
+
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="ri-facebook-line"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Support</h3>
+                    <nav class="footer__links">
+                        <ul>
+                            <li><a href="#" class="footer__link">Help Center</a></li>
+                            <li><a href="#" class="footer__link">Contact Us</a></li>
+                            <li><a href="#" class="footer__link">FAQS</a></li>
+                            <li><a href="#" class="footer__link">Test Drives</a></li>
+                            <li><a href="#" class="footer__link">Terms of Service</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Quick Links</h3>
+                    <nav class="footer__links">
+                        <ul>
+                            <li><a href="#" class="footer__link">Browse Cars</a></li>
+                            <li><a href="#" class="footer__link">Sell Your Car</a></li>
+                            <li><a href="#" class="footer__link">Finance Options</a></li>
+                            <li><a href="#" class="footer__link">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__newsletter">
+                    <h3>Newsletter</h3>
+                    <p>
+                        Subscribe for the latest Inventory updates and special offers
+                    </p>
+
+                    <div class="newsletter__form">
+                        <input type="email" class="newsletter__input" placeholder="Email address">
+                        <button class="newsletter__button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__contact">
+                <div class="footer__contact-item">
+                    <i class="ri-phone-line"></i>
+                    <span>1-800-Ngugi-E-Cars</span>
+                </div>
+
+                <div class="footer__contact-item">
+                    <i class="ri-mail-line"></i>
+                    <span>sales@ngugicars.com</span>
+                </div>
+
+                <div class="footer__contact-item">
+                    <i class="ri-map-pin-line"></i>
+                    <span>123 Place</span>
+                </div>
+            </div>
+
+            <div class="footer__buttom">
+                <div class="footer__copyright">
+                    <p>
+                        © 2025 Ngugi E-Car Sales. All rights reserved.
+                    </p>
+                </div>
+
+                <nav class="footer__legal">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Services</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngugi E-car Sales</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" 
+    integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="Ngugi E-car Sales">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list" id="nav-list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="listings.html" class="nav__link">Browse Cars</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="side2__keys">
+                <i class="ri-sun-line mode__toggle"></i>
+                <i class="ri-menu-line nav__toggle" id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home__section" id="home-section">
+            <div class="home__section container grid">
+                <h1 class="section__title">Contact Us</h1>
+                <p class="home__description">Get in touch with our expert team for all your electric vehicle needs</p>
+            </div>
+        </section>
+
+        <section class="contact__section container grid">
+            <div class="contact__wrapper">
+                <div class="contact__area">
+                    <div class="contact__data">
+                        <div class="form__header">
+                            <h3 class="sub__title">Send Us a Message</h3>
+                        </div>
+                        <p class="sub__description">Fill out the form below and we'll get back to you within 24 hours</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact__form">
+                        <div class="contact__container-field">
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                                </div>
+                            </div>
+
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="phone">Phone:</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject" placeholder="How can we help you?" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="message">Message:</label>
+                                <textarea name="message" id="message" placeholder="Tell us more about your inquiry..." rows="5" required></textarea>
+                            </div>
+
+                            <!-- AI Suggestions -->
+                            <div id="aiSuggestions" class="ai__suggestions hidden">
+                                <div class="ai__header">
+                                    <i class="fas fa-robot"></i>
+                                    <span>AI Suggestions</span>
+                                </div>
+                                <ul id="suggestionsList" class="suggestions__list"></ul>
+                            </div>
+
+                            <button type="submit" class="btn send-btn" id="submitBtn">
+                                <i class="ri-send-plane-2-line"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact__details-wrapper">
+                <div class="contact__details-data">
+                    <h3 class="sub__title">Get in Touch</h3>
+                    <p class="sub__description">Multiple ways to reach our team</p>
+                </div>
+
+                <div class="contact__info">
+                    <div class="contact__info-data">
+                        <div class="info__icon">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <div class="info__content">
+                            <h3>Address</h3>
+                            <p>123 Electric Avenue</p>
+                            <p>EV City, EC 12345</p>
+                            <p>United States</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__info-data">
+                        <div class="info__icon">
+                            <i class="ri-phone-line"></i>
+                        </div>
+                        <div class="info__content">
+                            <h3>Phone</h3>
+                            <p>Sales: (555) 123-4567</p>
+                            <p>Service: (555) 123-4568</p>
+                            <p>Finance: (555) 123-4569</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__info-data">
+                        <div class="info__icon">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <div class="info__content">
+                            <h3>Email</h3>
+                            <p>sales@nougiecars.com</p>
+                            <p>support@nougiecars.com</p>
+                            <p>info@nougiecars.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__info-data">
+                        <div class="info__icon">
+                            <i class="ri-time-line"></i>
+                        </div>
+                        <div class="info__content">
+                            <h3>Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
+                            <p>Saturday: 9:00 AM - 6:00 PM</p>
+                            <p>Sunday: 11:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments Section -->
+        <section class="departments__section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Departments</h2>
+                    <p class="section__description">Direct contact for specific inquiries</p>
+                </div>
+
+                <div class="departments__grid">
+                    <div class="department__card sales">
+                        <div class="department__icon">
+                            <i class="ri-handshake-fill"></i>
+                        </div>
+                        <h4>Sales Team</h4>
+                        <p>Ext. 1001</p>
+                    </div>
+
+                    <div class="department__card finance">
+                        <div class="department__icon">
+                            <i class="ri-calculator-line"></i>
+                        </div>
+                        <h4>Finance Department</h4>
+                        <p>Ext. 1002</p>
+                    </div>
+
+                    <div class="department__card service">
+                        <div class="department__icon">
+                            <i class="ri-tools-line"></i>
+                        </div>
+                        <h4>Service Center</h4>
+                        <p>Ext. 1003</p>
+                    </div>
+
+                    <div class="department__card support">
+                        <div class="department__icon">
+                            <i class="ri-customer-service-line"></i>
+                        </div>
+                        <h4>Customer Support</h4>
+                        <p>Ext. 1004</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map__section">
+            <div class="container">
+                <div class="map__container">
+                    <h3 class="sub__title">Visit Our Showroom</h3>
+                    <div class="map__placeholder">
+                        <i class="ri-map-pin-line"></i>
+                        <p>Interactive Map Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="assets/img/logo.png" alt="Ngugi E-car Sales Logo">
+                    </div>
+
+                    <p class="footer__description">
+                        Ngugi E-Car Sales is your premier destination for Motor vehicles. We provide a seamless car buying experience with transparent pricing and expert guidance.
+                    </p>
+
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="ri-facebook-line"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Support</h3>
+                    <nav class="footer__links">
+                        <ul>
+                            <li><a href="#" class="footer__link">Help Center</a></li>
+                            <li><a href="#" class="footer__link">Contact Us</a></li>
+                            <li><a href="#" class="footer__link">FAQS</a></li>
+                            <li><a href="#" class="footer__link">Test Drives</a></li>
+                            <li><a href="#" class="footer__link">Terms of Service</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Quick Links</h3>
+                    <nav class="footer__links">
+                        <ul>
+                            <li><a href="#" class="footer__link">Browse Cars</a></li>
+                            <li><a href="#" class="footer__link">Sell Your Car</a></li>
+                            <li><a href="#" class="footer__link">Finance Options</a></li>
+                            <li><a href="#" class="footer__link">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__newsletter">
+                    <h3>Newsletter</h3>
+                    <p>
+                        Subscribe for the latest Inventory updates and special offers
+                    </p>
+
+                    <div class="newsletter__form">
+                        <input type="email" class="newsletter__input" placeholder="Email address">
+                        <button class="newsletter__button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__contact">
+                <div class="footer__contact-item">
+                    <i class="ri-phone-line"></i>
+                    <span>1-800-Ngugi-E-Cars</span>
+                </div>
+
+                <div class="footer__contact-item">
+                    <i class="ri-mail-line"></i>
+                    <span>sales@ngugicars.com</span>
+                </div>
+
+                <div class="footer__contact-item">
+                    <i class="ri-map-pin-line"></i>
+                    <span>123 Place</span>
+                </div>
+            </div>
+
+            <div class="footer__buttom">
+                <div class="footer__copyright">
+                    <p>
+                        © 2025 Ngugi E-Car Sales. All rights reserved.
+                    </p>
+                </div>
+
+                <nav class="footer__legal">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Services</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/contact.js"></script>    
+</body>
+</html>
