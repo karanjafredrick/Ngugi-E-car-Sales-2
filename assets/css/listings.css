@@ -440,6 +440,12 @@ body.dark-mode .header__section {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .search__container {
+        padding: var(--padding-lg) 10rem;
+    }
+}
+
 .main__search-content {
     display: flex;
     flex-direction: column;

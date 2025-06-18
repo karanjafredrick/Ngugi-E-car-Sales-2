@@ -42,7 +42,7 @@
                 <div class="home__circles">
                     <div class="circle__background circle1"></div>
                     <div class="circle__background circle2"></div>
-                    <div class="circle__background cirlce3"></div>
+                    <div class="circle__background circle3"></div>
                 </div>
 
 
@@ -60,9 +60,11 @@
                     <i class="ri-checkbox-circle-fill">Easy Financing</i>
                 </div>
 
-                <button class="btn browse-btn">Browse Inventory</button>
-                <button class="btn sell-btn">Sell Your Car</button>
-
+                <div class="buttons">
+                    <button class="btn browse-btn">Browse Inventory</button>
+                    <button class="btn sell-btn">Sell Your Car</button>
+                </div>
+                
                 <div class="search__wrapper">
                     <h3>Quick Search</h3>
 
@@ -96,11 +98,11 @@
 
                     <div>
                         <label>Vehicle Type</label>
-                        <div class="vehicle__types" role="group">
+                        <div class="vehicle__types" role="radiogroup">
                             <button role="radio" aria-checked="true">Sedan</button>
-                            <button role="radio" aria-checked="true">SUV</button>
-                            <button role="radio" aria-checked="true">Hatchback</button>
-                            <button role="radio" aria-checked="true">Crossover</button>
+                            <button role="radio" aria-checked="false">SUV</button>
+                            <button role="radio" aria-checked="false">Hatchback</button>
+                            <button role="radio" aria-checked="false">Crossover</button>
                         </div>
                     </div>
 
@@ -161,7 +163,7 @@
                     </div>
 
                     <div class="car__card">
-                        <img src="assets/img/BMW m4.jpg" alt="">
+                        <img src="assets/img/BMW m4.jpg" alt="BMW M4">
                         <div class="img__icons">
                             <i class="ri-heart-line heart__icon"></i>
                             <i class="ri-image-line"></i>
@@ -181,7 +183,7 @@
                     </div>
 
                     <div class="car__card">
-                        <img src="assets/img/mercedes A180.jpg" alt="">
+                        <img src="assets/img/mercedes A180.jpg" alt="Mercedes A180">
                         <div class="img__icons">
                             <i class="ri-heart-line heart__icon"></i>
                             <i class="ri-image-line"></i>
@@ -201,13 +203,13 @@
                     </div>
 
                     <div class="car__card">
-                        <img src="assets/img/Nissan Note Versa.jpg" alt="">
+                        <img src="assets/img/Nissan Note Versa.jpg" alt="Nissan Note Versa">
                         <div class="img__icons">
                             <i class="ri-heart-line heart__icon"></i>
                             <i class="ri-image-line"></i>
                         </div>
                         <h2 class="car__name">Nissan Note Versa</h2>
-                        <p class="car__price">&25,000</p>
+                        <p class="car__price">$25,000</p>
                         <div class="car__content">
                             <span><i class="ri-calendar-line">2021</i></span>
                             <span><i class="ri-gas-station-line">Hybrid</i></span>
@@ -221,7 +223,7 @@
                     </div>
 
                     <div class="car__card">
-                        <img src="assets/img/Range-rover.jpg" alt="">
+                        <img src="assets/img/Range-rover.jpg" alt="Range Rover">
                         <div class="img__icons">
                             <i class="ri-heart-line heart__icon"></i>
                             <i class="ri-image-line"></i>
@@ -241,7 +243,7 @@
                     </div>
 
                     <div class="car__card">
-                        <img src="assets/img/volkswagen Tiguan.jpg" alt="">
+                        <img src="assets/img/volkswagen Tiguan.jpg" alt="Volkswagen Tiguan">
                         <div class="img__icons">
                             <i class="ri-heart-line heart__icon"></i>
                             <i class="ri-image-line"></i>
@@ -341,7 +343,7 @@
                 </div>
             </div>
 
-            <div class="footer__buttom">
+            <div class="footer__bottom">
                 <div class="footer__copyright">
                     <p>
                         © 2025 Ngugi E-Car Sales. All rights reserved.
